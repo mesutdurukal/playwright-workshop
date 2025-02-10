@@ -18,6 +18,9 @@ module.exports = defineConfig({
     {
       name: 'Firefox',
       use: { browserName: 'firefox' }
+    },{
+      name: 'Chromium',
+      use: { browserName: 'chromium', viewport: { width: 1280, height: 720 } }
     }
   ],
 });

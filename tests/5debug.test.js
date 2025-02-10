@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('basic test', async ({ page }) => {
+test('debug test', async ({ page }) => {
   await page.goto('https://google.com');
   debugger; // ⏸️ Execution pauses here
   await page.pause();

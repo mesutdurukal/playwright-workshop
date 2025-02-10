@@ -3,6 +3,7 @@ const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: './tests',  // Directory where test files are located
+  metadata: {myKey: "myValue"},
   timeout: 30 * 1000,     // Global test timeout: Maximum time one test can run (in ms)
   expect: {
     timeout: 5000, // Assertions timeout (5 sec)
@@ -23,9 +24,6 @@ module.exports = defineConfig({
     {
       name: 'Chromium',
       use: { browserName: 'chromium', viewport: { width: 1280, height: 720 } }
-    },    {
-      name: 'Firefox',
-      use: { browserName: 'firefox' }
     }
   ],
 });
