@@ -1,5 +1,7 @@
-const { test } = require('@playwright/test');
-const {globalHook } = require("./hooks")
+// const { test } = require('@playwright/test');
+import { test } from '@playwright/test';
+//const {globalHook } = require("./hooks")
+import { globalHook } from './hooks';
 
 test.beforeAll(async () => {
   console.log('Before all tests');

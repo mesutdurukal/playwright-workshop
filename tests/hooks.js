@@ -1,4 +1,5 @@
-const { test } = require('@playwright/test');
+// const { test } = require('@playwright/test');
+import { test } from '@playwright/test';
 
 test.beforeAll(async () => {
   console.log('Global Before all');
