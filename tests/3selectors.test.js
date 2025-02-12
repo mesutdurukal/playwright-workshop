@@ -14,7 +14,7 @@ test('selectors test', async ({ page }) => {
   //await page.getByRole('combobox').fill("mesut");
   //await page.getByRole('combobox', { name: 'Search' }).fill("mesut");
   //await page.getByRole('combobox', { title: 'Search' }).fill("mesut");
-  // await page.waitForTimeout(500);
+  await page.waitForTimeout(500);
   await page.keyboard.press('Escape');
 
   // Search Button Click

@@ -9,7 +9,7 @@ module.exports = defineConfig({
   expect: {
     timeout: 5000, // Assertions timeout (5 sec)
   },
-  reporter: "allure-playwright",
+  reporter: "html", // allure-playwright
   retries: process.env.CI ? 2 : 0, // 2 retries in CI, 0 retries locally // Retries for flaky tests
   workers: 4,      // Run tests in parallel using 4 workers
   outputDir: './test-results',
